@@ -1,0 +1,29 @@
+<svg width="900" height="520" viewBox="0 0 900 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="KS Beauty logo">
+  <rect width="900" height="520" rx="40" fill="url(#paint0_radial)"/>
+  <g opacity="0.95">
+    <path d="M415 108C383 123 371 153 383 178C394 201 418 208 446 206C493 202 533 215 556 243C579 271 581 309 556 337C532 365 497 377 463 376" stroke="#f11193" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M370 144C348 156 337 176 340 196C343 218 359 230 378 239C402 251 421 269 430 291C438 310 437 328 430 347" stroke="#111111" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M377 195C357 205 344 221 341 240C338 261 348 279 366 289C389 303 409 320 419 343C426 358 428 372 424 388" stroke="#111111" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M549 240C532 244 520 254 513 268C506 282 505 297 510 310C517 327 532 338 551 341" stroke="#f11193" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M488 182C466 185 448 195 437 210C426 225 423 241 427 257C432 273 444 286 461 293" stroke="#f11193" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M445 214C434 234 435 257 449 276C462 295 483 305 504 305C523 305 540 299 552 289" stroke="#f11193" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M414 340C385 344 364 361 355 386C346 410 347 437 357 461" stroke="#111111" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M495 332C507 353 524 371 546 385C572 401 596 405 617 396" stroke="#f11193" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M555 312C563 336 576 357 596 375C615 392 637 403 660 408" stroke="#f11193" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M364 198C385 188 403 175 416 157C424 146 431 134 435 118" stroke="#111111" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M467 214C487 209 500 198 509 184C515 173 518 161 517 147" stroke="#f11193" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M383 210C391 222 404 229 418 232" stroke="#111111" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M492 235C501 245 512 249 525 249" stroke="#f11193" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M530 255C541 266 553 271 567 272" stroke="#f11193" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M335 195C330 209 329 224 334 238" stroke="#111111" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M323 314C341 317 355 324 365 335C377 349 382 366 381 386" stroke="#111111" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M492 358C501 378 514 395 532 409C548 421 567 430 589 434" stroke="#f11193" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M250 280C236 274 229 263 230 249C232 234 240 223 253 217C267 211 282 212 294 221C303 228 307 239 307 251C307 263 302 273 293 281C285 288 275 293 266 294" stroke="#111111" stroke-width="4.5" stroke-linecap="round"/>
+  </g>
+  <defs>
+    <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(450 260) rotate(90) scale(330 600)">
+      <stop stop-color="#fff9fb"/>
+      <stop offset="1" stop-color="#f7cdda"/>
+    </radialGradient>
+  </defs>
+</svg>
