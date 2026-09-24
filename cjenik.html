@@ -11,17 +11,17 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  <link rel="icon" type="image/svg+xml" href="./ks-beauty-logo.svg">
+  <link rel="icon" type="image/png" href="./logo ks.png">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="page-about">
   <div class="page-shell">
     <header class="site-header">
       <nav class="navbar navbar-expand-lg navbar-dark site-nav">
         <div class="container py-2">
           <a class="navbar-brand brand-lockup" href="index.html">
-            <img src="./ks-beauty-logo.svg" alt="KS Beauty logo" class="brand-logo">
-            <span class="brand-text">KS Beauty</span>
+            <img src="./logo ks.png" alt="KS Beauty logo" class="brand-logo brand-logo--wordmark">
+            <span class="brand-wordmark">KS Beauty</span>
           </a>
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,6 +58,18 @@
       <section class="price-page-hero">
         <div class="container text-center">
           <h1 class="price-page-title">Cjenik usluga</h1>
+        </div>
+      </section>
+
+      <section class="price-export-section">
+        <div class="container">
+          <div class="price-export-box">
+            <div>
+              <p class="price-export-label">Digitalni oblik za automatsku obradu</p>
+              <p class="price-export-text">Cjenik je dostupan i u formatu CSV radi kompatibilnosti s obvezom objave u digitalnom obliku.</p>
+            </div>
+            <a href="./salon_Stjepana-Radica-13-Virovitica_KSBeauty01_001_2026-10-01_08-00.csv" class="price-export-button" download>Preuzmi CSV</a>
+          </div>
         </div>
       </section>
 
@@ -237,29 +249,6 @@
                   </div>
                 </div>
               </div>
-
-              <!-- Puder obrve -->
-              <div class="price-category mt-5">
-                <h2 class="price-category-title">Puder obrve</h2>
-                <div class="price-list">
-                  <div class="price-item">
-                    <span class="price-service">Ugradnja</span>
-                    <span class="price-value">130,00 €</span>
-                  </div>
-                  <div class="price-item">
-                    <span class="price-service">1. Korekcija</span>
-                    <span class="price-value">50,00 €</span>
-                  </div>
-                  <div class="price-item">
-                    <span class="price-service">Korekcija</span>
-                    <span class="price-value">100,00 €</span>
-                  </div>
-                  <div class="price-item">
-                    <span class="price-service">Bojanje obrva</span>
-                    <span class="price-value">8,00 €</span>
-                  </div>
-                </div>
-              </div>
             </div>
 
             <!-- Desna kolona -->
@@ -434,7 +423,7 @@
                     <span class="price-service">Klasična maderoterapija Paket (10 tretmana)</span>
                     <span class="price-value">130,00 €</span>
                   </div>
-                   <div class="price-item">
+                  <div class="price-item">
                     <span class="price-service">Brazilska maderoterapija 1 tretman</span>
                     <span class="price-value">20,00 €</span>
                   </div>
@@ -473,7 +462,7 @@
               </div>
             </div>
           </div>
-
+        </div>
       </section>
     </main>
 
@@ -514,5 +503,49 @@
         </div>
       </footer>
   </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.price-category').forEach(function (category) {
+        const list = category.querySelector('.price-list');
+        if (!list) return;
+
+        const header = document.createElement('div');
+        header.className = 'price-compare-header';
+        header.innerHTML = `
+          <span class="price-header-label price-header-label--service">&nbsp;</span>
+          <span class="price-header-label price-header-label--current">Trenutna<br>cijena</span>
+          <span class="price-header-label price-header-label--secondary">Sidrena cijena<br>na dan 10.9.2026.</span>
+        `;
+        list.parentNode.insertBefore(header, list);
+
+        list.querySelectorAll('.price-item').forEach(function (item) {
+          const currentValue = item.querySelector('.price-value');
+          if (!currentValue) {
+            item.classList.add('price-item--section');
+            return;
+          }
+
+          const dualValueWrap = document.createElement('div');
+          dualValueWrap.className = 'price-values';
+
+          const currentValueClone = document.createElement('span');
+          currentValueClone.className = 'price-value';
+          currentValueClone.textContent = currentValue.textContent.trim();
+
+          const secondaryValue = document.createElement('span');
+          secondaryValue.className = 'price-value price-value--secondary';
+          secondaryValue.textContent = currentValue.textContent.trim();
+
+          dualValueWrap.appendChild(currentValueClone);
+          dualValueWrap.appendChild(secondaryValue);
+
+          currentValue.remove();
+          item.appendChild(dualValueWrap);
+          item.classList.add('price-item--dual');
+        });
+      });
+    });
+  </script>
 </body>
 </html>
